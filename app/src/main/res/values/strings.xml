@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">saturnus-riska</string>
+    <string name="verif">Verification</string>
+    <string name="kode_berhasil">Kode Berhasil Dikirim!</string>
+    <string name="pesan">Silahkan Perika Nomor Anda</string>
+
+</resources>
