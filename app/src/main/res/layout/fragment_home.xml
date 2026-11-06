@@ -6,6 +6,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Home.HomeFragment">
 
+    <View
+        android:id="@+id/background_header"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:background="@drawable/bg_header_wave"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -18,32 +27,6 @@
         app:layout_scrollFlags="scroll|enterAlways"
         app:subtitleTextColor="@android:color/white"
         app:titleTextColor="@android:color/white" />
-
-    <Button
-        android:id="@+id/btnPertemuan4"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/buton"
-        android:text="Pertemuan 4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.542"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.19" />
-
-    <Button
-        android:id="@+id/btnPertemuan5"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#4CAF50"
-        android:text="Pertemuan 5"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.542"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPertemuan4"
-        app:layout_constraintVertical_bias="0.125" />
 
     <TextView
         android:id="@+id/textView4"
@@ -59,16 +42,81 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
-    <Button
-        android:id="@+id/btnPertemuan7"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:text="Pertemuan 7"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="238dp"
+        android:layout_height="324dp"
+        android:layout_marginTop="276dp"
+        android:padding="16dp"
+        app:columnCount="1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPertemuan5"
-        app:layout_constraintVertical_bias="0.161" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:useDefaultMargins="true">
+
+        <Button
+            android:id="@+id/btnPertemuan4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/buton"
+            android:text="Pertemuan 4"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.542"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:layout_constraintVertical_bias="0.19"
+            app:layout_gravity="fill_horizontal"
+            app:layout_row="0" />/>
+
+        <Button
+            android:id="@+id/btnPertemuan5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4CAF50"
+            android:text="Pertemuan 5"
+            app:layout_columnWeight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.542"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnPertemuan4"
+            app:layout_constraintVertical_bias="0.125"
+            app:layout_gravity="fill_horizontal" />/>
+
+
+        <Button
+            android:id="@+id/btnPertemuan7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pertemuan 7"
+            app:layout_columnWeight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.545"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnPertemuan5"
+            app:layout_constraintVertical_bias="0.161"
+            app:layout_gravity="fill_horizontal" />/>
+
+        <Button
+            android:id="@+id/btnPertemuan10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#AF4C4C"
+            android:text="Pertemuan 10"
+            app:layout_columnWeight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.545"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnPertemuan7"
+            app:layout_constraintVertical_bias="0.111"
+            app:layout_gravity="fill_horizontal" />/>
+
+    </androidx.gridlayout.widget.GridLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
