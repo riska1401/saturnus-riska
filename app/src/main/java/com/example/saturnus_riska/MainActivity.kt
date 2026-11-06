@@ -4,8 +4,9 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.saturnus_riska.databinding.ActivityMainBinding
-import com.example.saturnus_riska.pertemuan_4.FourthActivity
-import com.example.saturnus_riska.pertemuan_5.FifthActivity
+import com.example.saturnus_riska.Home.pertemuan_4.FourthActivity
+import com.example.saturnus_riska.Home.pertemuan_5.FifthActivity
+import com.example.saturnus_riska.Home.pertemuan_7.SeventhActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -27,6 +28,10 @@ class MainActivity : AppCompatActivity() {
         }
         binding.btnPertemuan5.setOnClickListener {
             val intent = Intent(this, FifthActivity::class.java)
+            startActivity(intent)
+        }
+        binding.btnPertemuan7.setOnClickListener {
+            val intent = Intent(this, SeventhActivity::class.java)
             startActivity(intent)
         }
     }

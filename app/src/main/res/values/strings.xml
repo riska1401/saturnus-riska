@@ -3,5 +3,7 @@
     <string name="verif">Verification</string>
     <string name="kode_berhasil">Kode Berhasil Dikirim!</string>
     <string name="pesan">Silahkan Perika Nomor Anda</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

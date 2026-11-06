@@ -1,4 +1,4 @@
-package com.example.saturnus_riska.pertemuan_5
+package com.example.saturnus_riska.Home.pertemuan_5
 
 import android.os.Bundle
 import android.view.MenuItem
@@ -8,7 +8,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.saturnus_riska.R
-import com.example.saturnus_riska.databinding.ActivityFifthBinding
 import com.example.saturnus_riska.databinding.ActivityWebViewBinding
 
 class WebViewActivity : AppCompatActivity() {
