@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import com.example.saturnus_riska.Home.pertemuan_10.TenthActivity
+import com.example.saturnus_riska.Home.pertemuan_11.EleventhActivity
 import com.example.saturnus_riska.Home.pertemuan_4.FourthActivity
 import com.example.saturnus_riska.Home.pertemuan_5.FifthActivity
 import com.example.saturnus_riska.Home.pertemuan_7.SeventhActivity
@@ -51,6 +52,10 @@ class HomeFragment : Fragment() {
         }
         binding.btnPertemuan10.setOnClickListener {
             val intent = Intent(requireContext(), TenthActivity::class.java)
+            startActivity(intent)
+        }
+        binding.btnPertemuan11.setOnClickListener {
+            val intent = Intent(requireContext(), EleventhActivity::class.java)
             startActivity(intent)
         }
     }

@@ -114,7 +114,22 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnPertemuan7"
             app:layout_constraintVertical_bias="0.111"
-            app:layout_gravity="fill_horizontal" />/>
+            app:layout_gravity="fill_horizontal" />
+
+        <Button
+            android:id="@+id/btnPertemuan11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#009688"
+            android:text="Pertemuan 11"
+            app:layout_columnWeight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.545"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnPertemuan7"
+            app:layout_constraintVertical_bias="0.111"
+            app:layout_gravity="fill_horizontal" />
 
     </androidx.gridlayout.widget.GridLayout>
 
