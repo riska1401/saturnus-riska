@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import com.example.saturnus_riska.Home.HomeFragment
 import com.example.saturnus_riska.Message.MessageFragment
 import com.example.saturnus_riska.More.MoreFragment
+import com.example.saturnus_riska.Note.NoteFragment
 import com.example.saturnus_riska.databinding.ActivityBaseBinding
 
 class BaseActivity : AppCompatActivity() {
@@ -39,6 +40,11 @@ class BaseActivity : AppCompatActivity() {
                     replaceFragment(MoreFragment())
                     true
                 }
+                R.id.note -> {
+                    replaceFragment(NoteFragment())
+                    true
+                }
+
 
                 else -> false // return false jika item tidak ada yang di klik
             }
